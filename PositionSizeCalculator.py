@@ -88,7 +88,7 @@ class PositionSizeCalculator(QtWidgets.QWidget):
         entry_price = float(self.entry_price_entry.text())
         exit_price = float(self.exit_price_entry.text())
         stop_loss = float(self.stop_loss_entry.text())
-        position_size = (account_balance * risk_percentage) / (entry_price - stop_loss)
+        position_size = abs((account_balance * risk_percentage) / (entry_price - stop_loss))
         self.position_size_label.setText(f"Position size: {position_size:.2f}")
 
 
