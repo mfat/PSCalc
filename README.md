@@ -20,8 +20,8 @@ Windows: https://github.com/mfat/qtpositioncalc/releases/download/0.1/PositionSi
 
 
 
-You can also just download qt_positioncalculator.py and run it with python like this:
+You can also just download [PositionSizeCalculator.py](https://github.com/mfat/qtpositioncalc/releases/download/0.1/PositionSizeCalculator.py) and run it with python like this:
 ```
-python qt_positioncalculator.py
+python PositionSizeCalculator.py
 ```
 
