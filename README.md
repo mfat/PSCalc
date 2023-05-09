@@ -5,9 +5,19 @@
 This is a simple position size calculator for traders.
 It takes your account balance, entry price, exit price, stop loss and risk percentage to calculate the correct position size. 
 It has both CLI and GUI versions. It's cross-platform and should run on Linux, MacOS and Windows or any OS with Python installed, but it was only tested on Linux.
-To run just download qt_positioncalculator.py and run it with python like this:
+
+# How to install/use
+
+Just download and run the executable for your operating system:
+
+Linux GUI: https://github.com/mfat/qtpositioncalc/releases/download/0.1/PositionSizeCalculatorLinux
+Linux CLI: https://github.com/mfat/qtpositioncalc/releases/download/0.1/positioncalc.run
+MacOS: https://github.com/mfat/qtpositioncalc/releases/download/0.1/PositionSizeCalculatorMac.bin
+Windows: https://github.com/mfat/qtpositioncalc/releases/download/0.1/PositionSizeCalculator.exe
+
+
+You can also just download qt_positioncalculator.py and run it with python like this:
 ```
 python qt_positioncalculator.py
 ```
-You can also use the CLI version. 
 
