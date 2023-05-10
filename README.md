@@ -9,9 +9,11 @@ It has both CLI and GUI versions. It's cross-platform and should run on Linux, M
 # Use case
 This app is intnded for traders (mainly stocks and cryptocurrency traders) that need a tool to manage their risk. It is optimized for quick data entry, and quick copy/paste from/into the app. You can navigate through the app using keyboard. Just use tab and arrow up/down keys to move between text fields quickly.
 
-# How to install/use
+# Download
 
-Head to the [Releases](https://github.com/mfat/qtpositioncalc/releases) section and download the app for your operating system. Each release contains versions for Linux, Windows and MacOS plus the python script. If you're a Windows user, download the exe file.
+[Download Windows version here](https://github.com/mfat/PSCalc/releases/latest/download/PSCalc.exe)
+
+Or head to the [Releases](https://github.com/mfat/PSCalc/releases) section and download the app for your operating system. Each release contains versions for Linux, Windows and MacOS plus the python script. If you're a Windows user, download the exe file.
 
 The app requires no installation. Just download the file and run it.
 
