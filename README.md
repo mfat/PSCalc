@@ -1,5 +1,5 @@
 # mFat Position Size Calculator
-![App Screenshot](https://github.com/mfat/qtpositioncalc/blob/ab1f0023afee6818077f0da049de370056b2a1ae/app-screenshot.png)
+![App Screenshot](https://github.com/mfat/qtpositioncalc/blob/7627e2240d0c98552544be7d7dfaf4bc289540ec/App-Screenshot%20.png)
 
 # Introduction
 This is a simple position size calculator for traders.
