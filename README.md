@@ -1,10 +1,13 @@
 # mFat Position Size Calculator
 ![App Screenshot](https://github.com/mfat/qtpositioncalc/blob/ab1f0023afee6818077f0da049de370056b2a1ae/app-screenshot.png)
 
-
+# Introduction
 This is a simple position size calculator for traders.
 It takes your account balance, entry price, exit price, stop loss and risk percentage to calculate the correct position size. 
 It has both CLI and GUI versions. It's cross-platform and should run on Linux, MacOS and Windows or any OS with Python installed.
+
+# Use case
+This app is intnded for traders (mainly stocks and cryptocurrency traders) that need a tool to manage their risk. It is optimized for quick data entry, and quick copy/paste from/into the app. You can navigate through the app using keyboard. Just use tab and arrow up/down keys to move between text fields quickly.
 
 # How to install/use
 
