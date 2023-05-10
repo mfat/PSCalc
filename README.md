@@ -22,7 +22,7 @@ Disclamer: Don't rely on this app for your investemnt/trade decisions. This is j
 
 
 
-# How can i donate?
+# How to donate?
 Please use this Bitcoin address for donations:
 bc1qqtsyf0ft85zshsnw25jgsxnqy45rfa867zqk4t
 
