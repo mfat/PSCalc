@@ -24,6 +24,8 @@ Disclamer: Don't rely on this app for your investemnt/trade decisions. This is j
 
 # How to donate?
 Please use one of these addresses address for donations:
+
 Bitcoin: bc1qqtsyf0ft85zshsnw25jgsxnqy45rfa867zqk4t
+
 Tether (TRC20): TAvQWVD83DB3QuDspnMh4uiJ7hi4Jzcr6X
 
