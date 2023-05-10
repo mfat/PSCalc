@@ -1,4 +1,4 @@
-# mFat Position Size Calculator
+# PSCalc
 ![App Screenshot](https://github.com/mfat/qtpositioncalc/blob/7627e2240d0c98552544be7d7dfaf4bc289540ec/App-Screenshot%20.png)
 
 # Introduction
