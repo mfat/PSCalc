@@ -8,7 +8,7 @@ It has both CLI and GUI versions. It's cross-platform and should run on Linux, M
 
 # How to install/use
 
-Head to the [Releases] (https://github.com/mfat/qtpositioncalc/releases) section and download the app for your operating system. Each release contains versions for Linux, Windows and MacOS plus the python script. If you're a Windows user, download the exe file.
+Head to the [Releases](https://github.com/mfat/qtpositioncalc/releases) section and download the app for your operating system. Each release contains versions for Linux, Windows and MacOS plus the python script. If you're a Windows user, download the exe file.
 
 The app requires no installation. Just download the file and run it.
 
