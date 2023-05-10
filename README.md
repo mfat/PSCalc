@@ -19,3 +19,10 @@ You can also just download [PositionSizeCalculator.py](https://github.com/mfat/q
 python PositionSizeCalculator.py
 ```
 Disclamer: Don't rely on this app for your investemnt/trade decisions. This is just a hobby project that I have made for my personal use. The calculations shouldn't be considered financial advice. 
+
+
+
+# How can i donate?
+Please use this Bitcoin address for donations:
+bc1qqtsyf0ft85zshsnw25jgsxnqy45rfa867zqk4t
+
