@@ -10,13 +10,13 @@ It has both CLI and GUI versions. It's cross-platform and should run on Linux, M
 
 Just download and run the executable for your operating system:
 
-Linux GUI: https://github.com/mfat/qtpositioncalc/releases/download/0.1/PositionSizeCalculatorLinux
+Linux GUI: https://github.com/mfat/qtpositioncalc/releases/latest/download/PositionSizeCalculatorLinux
 
 Linux CLI: https://github.com/mfat/qtpositioncalc/releases/download/0.1/positioncalc.run
 
-MacOS: https://github.com/mfat/qtpositioncalc/releases/download/0.1/PositionSizeCalculatorMac.bin
+MacOS: https://github.com/mfat/qtpositioncalc/releases/latest/download/PositionSizeCalculatorMac.bin
 
-Windows: https://github.com/mfat/qtpositioncalc/releases/download/0.1/PositionSizeCalculator.exe
+Windows: https://github.com/mfat/qtpositioncalc/releases/latest/download/PositionSizeCalculator.exe
 
 
 
