@@ -107,17 +107,13 @@ class PositionSizeCalculator(QtWidgets.QWidget):
         stop_loss_clear_button.clicked.connect(self.stop_loss_entry.clear)
         grid.addWidget(stop_loss_clear_button, 4, 4)
 
-        profit_label = QtWidgets.QLabel("Profit ($): ")
-        grid.addWidget(profit_label, 5, 0, 1, 2)
+        pnl_label = QtWidgets.QLabel("PNL ($): ")
+        grid.addWidget(pnl_label, 5, 0, 1, 2)
 
-        self.profit_value_label = QtWidgets.QLabel("")
-        grid.addWidget(self.profit_value_label, 5, 2, 1, 2)
+        self.pnl_value_label = QtWidgets.QLabel("")
+        grid.addWidget(self.pnl_value_label, 5, 2, 1, 2)
 
-        loss_label = QtWidgets.QLabel("Loss ($): ")
-        grid.addWidget(loss_label, 6, 0, 1, 2)
 
-        self.loss_value_label = QtWidgets.QLabel("")
-        grid.addWidget(self.loss_value_label, 6, 2, 1, 2)
 
         calculate_button = QtWidgets.QPushButton("Calculate")
         calculate_button.clicked.connect(self.calculate_position_size)
@@ -167,26 +163,28 @@ class PositionSizeCalculator(QtWidgets.QWidget):
         account_balance = float(self.account_balance_entry.text())
         risk_percentage = float(self.risk_percentage_entry.text()) / 100
         entry_price = float(self.entry_price_entry.text())
+        exit_price_text = self.exit_price_entry.text().strip()
         stop_loss = float(self.stop_loss_entry.text())
 
-        if self.exit_price_entry.text() != "":
-            exit_price = float(self.exit_price_entry.text())
-            position_size = min((account_balance * risk_percentage) / abs(stop_loss - entry_price),
-                                (account_balance * risk_percentage) / abs(exit_price - entry_price))
-            profit = abs(exit_price - entry_price) * position_size
-            loss = abs(stop_loss - entry_price) * position_size
-            position_size_usd = position_size * entry_price
-            self.position_size_label.setText(f"Position size: {position_size:.2f}")
-            self.position_size_usd_label.setText(f"Position size (USD): {position_size_usd:.2f}")
-            self.profit_value_label.setText(f"{profit:.2f}")
-            self.loss_value_label.setText(f"{loss:.2f}")
-        else:
+        if exit_price_text != '':
+            exit_price = float(exit_price_text)
             position_size = abs((account_balance * risk_percentage) / (entry_price - stop_loss))
-            position_size_usd = position_size * entry_price
-            self.position_size_label.setText(f"Position size: {position_size:.2f}")
-            self.position_size_usd_label.setText(f"Position size (USD): {position_size_usd:.2f}")
-            self.profit_value_label.setText("")
-            self.loss_value_label.setText("")
+            pnl = (exit_price - entry_price) * position_size
+
+            if pnl >= 0:
+                self.pnl_value_label.setText("+{:.2f}".format(pnl))
+                self.pnl_value_label.setStyleSheet("color: green")
+            else:
+                self.pnl_value_label.setText("{:.2f}".format(pnl))
+                self.pnl_value_label.setStyleSheet("color: red")
+        else:
+            self.pnl_value_label.setText("")
+            self.pnl_value_label.setStyleSheet("")
+            position_size = abs((account_balance * risk_percentage) / (entry_price - stop_loss))
+
+        position_size_usd = position_size * entry_price
+        self.position_size_label.setText(f"Position size: {position_size:.2f}")
+        self.position_size_usd_label.setText(f"Position size (USD): {position_size_usd:.2f}")
 
     def show_about_dialog(self):
         author_url = "<a href='https://github.com/mfat/qtpositioncalc'>https://github.com/mfat/qtpositioncalc</a>"
@@ -194,7 +192,26 @@ class PositionSizeCalculator(QtWidgets.QWidget):
             self, "About Position Size Calculator",
             f"<p>This app was created by mFat using PyQt5. Check out the code on GitHub:</p><p align='center'>{author_url}</p>"
         )
+    def focus_next_widget(self, current_widget, next_widget):
+        # set the focus to the next widget
+        next_widget.setFocus()
 
+    def keyPressEvent(self, event):
+        """
+        Override the keyPressEvent function to navigate through input fields using up/down arrow keys.
+        """
+        current_widget = QtWidgets.QApplication.focusWidget()
+        all_widgets = self.findChildren(QtWidgets.QLineEdit)
+
+        current_index = all_widgets.index(current_widget)
+        if event.key() == QtCore.Qt.Key_Up:
+            # move to the previous widget
+            if current_index > 0:
+                all_widgets[current_index - 1].setFocus()
+        elif event.key() == QtCore.Qt.Key_Down:
+            # move to the next widget
+            if current_index < len(all_widgets) - 1:
+                all_widgets[current_index + 1].setFocus()
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
