@@ -15,11 +15,6 @@ Head to the [Releases](https://github.com/mfat/qtpositioncalc/releases) section 
 
 The app requires no installation. Just download the file and run it.
 
-
-You can also just download [PositionSizeCalculator.py](https://github.com/mfat/qtpositioncalc/releases/download/0.1/PositionSizeCalculator.py) and run it with python like this:
-```
-python PositionSizeCalculator.py
-```
 Disclamer: Don't rely on this app for your investemnt/trade decisions. This is just a hobby project that I have made for my personal use. The calculations shouldn't be considered financial advice. 
 
 
