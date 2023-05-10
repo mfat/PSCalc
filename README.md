@@ -15,6 +15,8 @@ Head to the [Releases](https://github.com/mfat/qtpositioncalc/releases) section 
 
 The app requires no installation. Just download the file and run it.
 
+If you're a linux user and prefer the command line, use [clicode.py](https://github.com/mfat/qtpositioncalc/blob/d75463edb18367559855df60f10d897009265b78/clicode.py)
+
 Disclamer: Don't rely on this app for your investemnt/trade decisions. This is just a hobby project that I have made for my personal use. The calculations shouldn't be considered financial advice. 
 
 
