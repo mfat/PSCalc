@@ -7,7 +7,7 @@ It takes your account balance, entry price, exit price, stop loss and risk perce
 It has both CLI and GUI versions. It's cross-platform and should run on Linux, MacOS and Windows or any OS with Python installed.
 
 # Use case
-This app is intnded for traders (mainly stocks and cryptocurrency traders) that need a tool to manage their risk. It is optimized for quick data entry, and quick copy/paste from/into the app. You can navigate through the app using keyboard. Just use tab and arrow up/down keys to move between text fields quickly.
+This app is intnded for traders (mainly stocks and cryptocurrency traders) to manage their risk. It is optimized for quick data entry, and quick copy/paste from/into the app. You can navigate through the app using keyboard. Just use tab and arrow up/down keys to move between text fields quickly.
 
 # Download
 
@@ -23,8 +23,8 @@ Disclamer: Don't rely on this app for your investemnt/trade decisions. This is j
 
 
 
-# How to donate?
-Please use one of these addresses address for donations:
+# Donations
+Please use one of these addresses for donations:
 
 Bitcoin: bc1qqtsyf0ft85zshsnw25jgsxnqy45rfa867zqk4t
 
