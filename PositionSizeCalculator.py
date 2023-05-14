@@ -70,42 +70,43 @@ class PositionSizeCalculator(QtWidgets.QWidget):
         entry_price_clear_button.clicked.connect(self.entry_price_entry.clear)
         grid.addWidget(entry_price_clear_button, 2, 4)
 
-
-        exit_price_label = QtWidgets.QLabel("Exit price (Optional):")
-        grid.addWidget(exit_price_label, 3, 0)
-
-        self.exit_price_entry = QtWidgets.QLineEdit()
-        grid.addWidget(self.exit_price_entry, 3, 1)
-
-        exit_price_copy_button = QtWidgets.QPushButton("Copy")
-        exit_price_copy_button.clicked.connect(lambda: self.copy_to_clipboard(self.exit_price_entry))
-        grid.addWidget(exit_price_copy_button, 3, 2)
-
-        exit_price_paste_button = QtWidgets.QPushButton("Paste")
-        exit_price_paste_button.clicked.connect(lambda: self.paste_entry_from_clipboard(self.exit_price_entry))
-        grid.addWidget(exit_price_paste_button, 3, 3)
-
-        exit_price_clear_button = QtWidgets.QPushButton("Clear")
-        exit_price_clear_button.clicked.connect(self.exit_price_entry.clear)
-        grid.addWidget(exit_price_clear_button, 3, 4)
-
         stop_loss_label = QtWidgets.QLabel("Stop loss:")
-        grid.addWidget(stop_loss_label, 4, 0)
+        grid.addWidget(stop_loss_label, 3, 0)
 
         self.stop_loss_entry = QtWidgets.QLineEdit()
-        grid.addWidget(self.stop_loss_entry, 4, 1)
+        grid.addWidget(self.stop_loss_entry, 3, 1)
 
         stop_loss_copy_button = QtWidgets.QPushButton("Copy")
         stop_loss_copy_button.clicked.connect(lambda: self.copy_to_clipboard(self.stop_loss_entry))
-        grid.addWidget(stop_loss_copy_button, 4, 2)
+        grid.addWidget(stop_loss_copy_button, 3, 2)
 
         stop_loss_paste_button = QtWidgets.QPushButton("Paste")
         stop_loss_paste_button.clicked.connect(lambda: self.paste_entry_from_clipboard(self.stop_loss_entry))
-        grid.addWidget(stop_loss_paste_button, 4, 3)
+        grid.addWidget(stop_loss_paste_button, 3, 3)
 
         stop_loss_clear_button = QtWidgets.QPushButton("Clear")
         stop_loss_clear_button.clicked.connect(self.stop_loss_entry.clear)
-        grid.addWidget(stop_loss_clear_button, 4, 4)
+        grid.addWidget(stop_loss_clear_button, 3, 4)
+
+        exit_price_label = QtWidgets.QLabel("Exit price (Optional):")
+        grid.addWidget(exit_price_label, 4, 0)
+
+        self.exit_price_entry = QtWidgets.QLineEdit()
+        grid.addWidget(self.exit_price_entry, 4, 1)
+
+        exit_price_copy_button = QtWidgets.QPushButton("Copy")
+        exit_price_copy_button.clicked.connect(lambda: self.copy_to_clipboard(self.exit_price_entry))
+        grid.addWidget(exit_price_copy_button, 4, 2)
+
+        exit_price_paste_button = QtWidgets.QPushButton("Paste")
+        exit_price_paste_button.clicked.connect(lambda: self.paste_entry_from_clipboard(self.exit_price_entry))
+        grid.addWidget(exit_price_paste_button, 4, 3)
+
+        exit_price_clear_button = QtWidgets.QPushButton("Clear")
+        exit_price_clear_button.clicked.connect(self.exit_price_entry.clear)
+        grid.addWidget(exit_price_clear_button, 4, 4)
+
+
 
         pnl_label = QtWidgets.QLabel("PNL ($): ")
         grid.addWidget(pnl_label, 5, 0, 1, 2)
